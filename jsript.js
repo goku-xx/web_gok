@@ -1,9 +1,27 @@
 // Existing JavaScript code
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const navLinks = document.querySelector('.nav-links');
+const showClass = document.querySelector('.show');
 
-hamburgerBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
+// Function to toggle the display of the .show class
+function toggleShowClass() {
+  if (showClass.style.display === 'flex') {
+    showClass.style.display = 'none';
+  } else {
+    showClass.style.display = 'flex';
+  }
+}
+
+// Add event listener for hamburger button click
+hamburgerBtn.addEventListener('click', toggleShowClass);
+
+// Add event listener for window resize
+window.addEventListener('resize', function() {
+  // Check if window width is greater than 768px
+  if (window.innerWidth > 768) {
+    // Hide the .show class
+    showClass.style.display = 'none';
+  }
 });
 
 // New JavaScript code for food menu functionality

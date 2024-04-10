@@ -48,15 +48,31 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
+    background-color:#333 ;
+    padding: 5px;
   }
   
   .bar {
     height: 3px;
     width: 25px;
+    border-radius: 5px;
     background-color: #fff;
     margin: 3px 0;
   }
+
+  .showHandle{
+    position: absolute;
+  }
   
+  .show{
+    display: none;
+    z-index: 10;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    
+  }
+
   main {
     padding: 20px 0;
   }
@@ -146,6 +162,21 @@
     margin-top: 5px; /* Adjust as needed */
   }
   
+
+  @media only screen and (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+    .links{
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .show{
+      display: none;
+    }
+  }
   
   
   
