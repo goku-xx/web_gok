@@ -5,8 +5,13 @@
   }
   
   body {
+    background-image: url('https://www.pexels.com/photo/white-painted-wall-1939485/');
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
   }
   
   .container {
@@ -177,6 +182,4 @@
       display: none;
     }
   }
-  
-  
   
