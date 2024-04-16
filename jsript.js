@@ -13,7 +13,21 @@ function toggleShowClass() {
 }
 
 // Add event listener for hamburger button click
-hamburgerBtn.addEventListener('click', toggleShowClass);
+document.addEventListener('DOMContentLoaded', function() {
+  var hamburgerBtn = document.getElementById('hamburgerBtn');
+  var body = document.body;
+
+  // Function to toggle blur class on body
+  function toggleBlur() {
+    body.classList.toggle('blur');
+  }
+
+  // Toggle blur class on hamburger click
+  hamburgerBtn.addEventListener('click', function() {
+    toggleBlur();
+    hamburgerBtn.classList.toggle('open');
+  });
+});
 
 // Add event listener for window resize
 window.addEventListener('resize', function() {

@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+  color: #fbf7f7;
   max-width: 960px;
   margin: auto;
   padding: 0 20px;
@@ -81,7 +82,7 @@ main {
 section {
   padding: 20px;
   margin-bottom: 20px;
-  background: #f4f4f4;
+  /* background: #f4f4f4; */
 }
 
 footer {
@@ -92,12 +93,13 @@ footer {
 }
 
 #Vittalis {
-  background: #fff; /* Change background color as desired */
+  /* background: #fff; Change background color as desired */
+  color: #f6f4f4;
   padding: 40px 20px; /* Adjust padding as needed */
 }
 
 #Vittalis h2 {
-  color: #333; /* Change text color as desired */
+  color: #faf8f8; /* Change text color as desired */
 }
 
 #Vittalis p {
@@ -106,12 +108,13 @@ footer {
 }
 
 #importance-diet {
-  background: #f9f9f9; /* Change background color as desired */
+  /* background: #f9f9f9; Change background color as desired */
+  color: #f6f4f4;
   padding: 40px 20px; /* Adjust padding as needed */
 }
 
 #importance-diet h2 {
-  color: #333; /* Change text color as desired */
+  color: #f6f4f4; /* Change text color as desired */
 }
 
 #importance-diet p,
@@ -171,4 +174,42 @@ footer {
   .show {
       display: none;
   }
+}
+.blur {
+  filter: blur(8px); /* You can adjust the blur intensity as needed */
+}
+
+/* Animation for hamburger bars */
+@keyframes rotateBar1 {
+  0% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(6px) rotate(0); }
+  100% { transform: translateY(6px) rotate(45deg); }
+}
+
+@keyframes rotateBar2 {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes rotateBar3 {
+  0% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-6px) rotate(0); }
+  100% { transform: translateY(-6px) rotate(-45deg); }
+}
+
+/* Apply animation to hamburger bars */
+.hamburger .bar {
+  transition: transform 0.3s ease;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  animation: rotateBar1 0.5s ease forwards;
+}
+
+.hamburger.open .bar:nth-child(2) {
+  animation: rotateBar2 0.5s ease forwards;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  animation: rotateBar3 0.5s ease forwards;
 }
