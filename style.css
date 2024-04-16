@@ -168,13 +168,19 @@ footer {
   .show {
       display: flex;
   }
+
+  .showHandle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .show {
       display: none;
   }
-}
+} */
 .blur {
   filter: blur(8px); /* You can adjust the blur intensity as needed */
 }

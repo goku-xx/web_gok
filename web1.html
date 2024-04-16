@@ -4,52 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vittalis</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-  body {
-  background-image: url('https://images.pexels.com/photos/1435909/pexels-photo-1435909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  /* Corrected the URL for background image */
-  background-color: rgb(238, 238, 240);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-  </style>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style2.css">
 </head>
-<body>
+<body class="blur">
 <header>
-  <div class="container">
-    <img src="https://i.pinimg.com/736x/c5/b1/9f/c5b19f549586c039f74c18c4168289cc.jpg" alt="Vitali's Logo" style="width: 100px; height: 100px;" class="logo">
-    <h1>Vitali's</h1>
-    <nav>
-      <button class="hamburger" id="hamburgerBtn">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <div class="showHandle">
-        <ul class="show">
-          <li><a href="#">Home</a></li>
-          <li><a href="#startup">Vittalis</a></li>
-          <li><a href="#importance-diet">Food diet</a></li>
-          <li><a href="#food-menu">Food Menu</a></li> 
-          <li><a href="#Contact">Contact</a></li><!-- New menu link --> <!-- Removed extra dot -->
+  <div class="nav-container">
+    <div class="nav-left">
+    <img src="https://i.pinimg.com/736x/c5/b1/9f/c5b19f549586c039f74c18c4168289cc.jpg" alt="Vitali's Logo"  class="logo">
+   <a class="brand-name" href="#">Vittali's</a>
+  </div>
+    <nav class="nav-right">
+        <ul class="show mobile-show" >
+          <li><a class="nav-links" href="#">Home</a></li>
+          <li><a class="nav-links" href="#startup">Vittalis</a></li>
+          <li><a class="nav-links" href="#importance-diet">Food diet</a></li>
+          <li><a  class="nav-links" href="#food-menu">Food Menu</a></li> 
+          <li><a class="nav-links" href="#Contact">Contact</a></li><!-- New menu link --> <!-- Removed extra dot -->
         </ul>
-      </div>
-      <div class="links">
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#startup">Vittali's</a></li>
-          <li><a href="#importance-diet">Food diet</a></li>
-          <li><a href="#food-menu">Food Menu</a></li> 
-          <li><a href="#Contact">Contact</a></li><!-- New menu link --> <!-- Removed extra dot -->
-        </ul>
-      </div>
+        <div class="hamburger-holder">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hamburger"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>        </div>
     </nav>
   </div>
 </header>
@@ -111,8 +85,8 @@
     <p>&copy; 2024 Vittalis . All rights reserved.</p>
   </div>
 </footer>
-
-<script src="jsript.js"></script> <!-- Corrected the script tag -->
+<script src="https://kit.fontawesome.com/515b1f239e.js" crossorigin="anonymous"></script>
+<script src="jsript.js"></script> 
 </body>
 </html>
 

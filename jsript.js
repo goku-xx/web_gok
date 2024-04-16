@@ -1,5 +1,5 @@
 // Existing JavaScript code
-const hamburgerBtn = document.getElementById('hamburgerBtn');
+const hamburgerBtn = document.getElementsByClassName('hamburger');
 const navLinks = document.querySelector('.nav-links');
 const showClass = document.querySelector('.show');
 
@@ -12,22 +12,46 @@ function toggleShowClass() {
   }
 }
 
-// Add event listener for hamburger button click
 document.addEventListener('DOMContentLoaded', function() {
-  var hamburgerBtn = document.getElementById('hamburgerBtn');
+  const hamburgerBtn = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.show');
   var body = document.body;
 
-  // Function to toggle blur class on body
-  function toggleBlur() {
-    body.classList.toggle('blur');
+
+
+  // Function to toggle the display of the .show class
+  function toggleShowClass() {
+    navLinks.classList.toggle('mobile-show');
   }
 
-  // Toggle blur class on hamburger click
+  toggleShowClass();
+
+  // Add event listener for hamburger button click
   hamburgerBtn.addEventListener('click', function() {
-    toggleBlur();
-    hamburgerBtn.classList.toggle('open');
+    toggleShowClass();
+    
   });
 });
+
+
+// Add event listener for hamburger button click
+// document.addEventListener('DOMContentLoaded', function() {
+//   var hamburgerBtn = document.getElementsByClassName('hambuger');
+//   var body = document.body;
+//   console.log("classss",hamburgerBtn);
+
+//   // Function to toggle blur class on body
+  // function toggleBlur() {
+  //   body.classList.toggle('blur');
+
+  // }
+
+//   // Toggle blur class on hamburger click
+//   hamburgerBtn.addEventListener('click', function() {
+//     toggleBlur();
+//     hamburgerBtn.classList.toggle('mobile-show');
+//   });
+// });
 
 // Add event listener for window resize
 window.addEventListener('resize', function() {
@@ -49,14 +73,14 @@ function showFoodDetails(name, features, calories) {
   foodDetails.classList.remove('hidden');
 }
 
-document.getElementById('vegetarianBtn').addEventListener('click', function() {
-  document.getElementById('vegetarianMenu').classList.remove('hidden');
-  document.getElementById('nonVegetarianMenu').classList.add('hidden');
-  document.getElementById('foodDetails').classList.add('hidden');
-});
+// document.getElementById('vegetarianBtn').addEventListener('click', function() {
+//   document.getElementById('vegetarianMenu').classList.remove('hidden');
+//   document.getElementById('nonVegetarianMenu').classList.add('hidden');
+//   document.getElementById('foodDetails').classList.add('hidden');
+// });
 
-document.getElementById('nonVegetarianBtn').addEventListener('click', function() {
-  document.getElementById('nonVegetarianMenu').classList.remove('hidden');
-  document.getElementById('vegetarianMenu').classList.add('hidden');
-  document.getElementById('foodDetails').classList.add('hidden');
-});
+// document.getElementById('nonVegetarianBtn').addEventListener('click', function() {
+//   document.getElementById('nonVegetarianMenu').classList.remove('hidden');
+//   document.getElementById('vegetarianMenu').classList.add('hidden');
+//   document.getElementById('foodDetails').classList.add('hidden');
+// });
